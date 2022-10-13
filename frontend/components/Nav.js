@@ -1,50 +1,13 @@
 import Link from "next/link";
-import { useState } from "react";
 import { useRouter } from "next/router";
-import { fetcher } from "../lib/api";
-import { setToken, unsetToken } from "../lib/auth";
-import { useUser } from "../lib/authContext";
+import { unsetToken } from "../lib/auth";
 
 const Nav = () => {
   const router = useRouter();
-  const [data, setData] = useState({
-    identifier: "",
-    password: "",
-  });
-
-  const { user, loading } = useUser();
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    try {
-      const responseData = await fetcher(
-        `${process.env.NEXT_PUBLIC_STRAPI_URL}/auth/local`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            identifier: data.identifier,
-            password: data.password,
-          }),
-        }
-      );
-      setToken(responseData);
-      router.reload("/");
-    } catch (error) {
-      console.error(error);
-    }
-  };
 
   const logout = () => {
     unsetToken();
     router.push("/");
-  };
-
-  const handleChange = (e) => {
-    setData({ ...data, [e.target.name]: e.target.value });
   };
 
   return (
@@ -55,7 +18,7 @@ const Nav = () => {
             {/*eslint-disable-next-line @next/next/no-img-element */}
             <img
               className="m-3"
-              src="/strapi-logo.png"
+              src="/parabolic-logo.png"
               width={200}
               height={50}
               alt="Strapi Logo"
@@ -103,71 +66,20 @@ const Nav = () => {
               <a className="md:p-2 py-2 block hover:text-red-400">Contact</a>
             </Link>
           </li>
-          {!loading &&
-            (user ? (
-              <>
-                <li>
-                  <Link href={"/profile"}>
-                    <a className="md:p-2 py-2 block hover:text-red-400">
-                      Profile
-                    </a>
-                  </Link>
-                </li>
-
-                <li>
-                  <a
-                    className="md:p-2 py-2 block hover:text-red-400"
-                    onClick={logout}
-                    style={{ cursor: "pointer" }}
-                  >
-                    Logout
-                  </a>
-                </li>
-              </>
-            ) : (
-              ""
-            ))}
-          {!loading && !user ? (
-            <>
-              <li>
-                <form onSubmit={handleSubmit} className="form-inline">
-                  <input
-                    type="text"
-                    name="identifier"
-                    onChange={handleChange}
-                    placeholder="Username"
-                    className="md:p-2 form-input py-2 rounded mx-2"
-                    value={data.identifier}
-                    required
-                  />
-                  <input
-                    type="password"
-                    name="password"
-                    onChange={handleChange}
-                    placeholder="Password"
-                    className="md:p-2 form-input py-2 rounded mx-2"
-                    value={data.password}
-                    required
-                  />
-                  <button
-                    className="md:p-2 rounded py-2 text-black bg-red-200 p-2"
-                    type="submit"
-                  >
-                    Login
-                  </button>
-                </form>
-              </li>
-              <li>
-                <Link href="/register">
-                  <a className="md:p-2 block py-2 hover:text-red-400 text-black">
-                    Register
-                  </a>
-                </Link>
-              </li>
-            </>
-          ) : (
-            ""
-          )}
+          <li>
+            <Link href={"/profile"}>
+              <a className="md:p-2 py-2 block hover:text-red-400">Profile</a>
+            </Link>
+          </li>
+          <li>
+            <a
+              className="md:p-2 py-2 block hover:text-red-400"
+              onClick={logout}
+              style={{ cursor: "pointer" }}
+            >
+              Logout
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
