@@ -8,11 +8,6 @@ const PostsList = ({ posts }) => {
 
   return (
     <Layout user={user}>
-      <h1 className="text-5xl md:text-6xl font-extrabold leading-yighter mb-4">
-        <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 py-2">
-          Posts
-        </span>
-      </h1>
       <Posts posts={posts} />
     </Layout>
   );

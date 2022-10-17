@@ -9,14 +9,14 @@ const Layout = ({ user, loading = false, children }) => (
     {user ? (
       <UserProvider value={{ user, loading }}>
         <Head>
-          <title>Post Database</title>
+          <title>TradeSmith Parabolic Profits - A Revolutionary New Research Service from</title>
         </Head>
 
         <Nav />
 
         <main className="bg-[#F1F2F6] grow px-4 pt-20">
-          <div className="flex justify-center bg-white mx-auto w-2/4 rounded-lg my-16 p-16">
-            <div className="text-2xl font-medium">{children}</div>
+          <div className="flex justify-center w-[825px] mx-auto py-16">
+            <div>{children}</div>
           </div>
         </main>
 

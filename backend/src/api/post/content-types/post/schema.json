@@ -4,7 +4,8 @@
   "info": {
     "singularName": "post",
     "pluralName": "posts",
-    "displayName": "post"
+    "displayName": "post",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -31,6 +32,9 @@
       "relation": "oneToMany",
       "target": "api::review.review",
       "mappedBy": "Post"
+    },
+    "tab": {
+      "type": "string"
     }
   }
 }
