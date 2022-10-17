@@ -14,7 +14,7 @@ const Layout = ({ user, loading = false, children }) => (
 
         <Nav />
 
-        <main className="grow px-4 pt-20">
+        <main className="bg-[#F1F2F6] grow px-4 pt-20">
           <div className="flex justify-center bg-white mx-auto w-2/4 rounded-lg my-16 p-16">
             <div className="text-2xl font-medium">{children}</div>
           </div>

@@ -8,3 +8,7 @@
   justify-content: space-between;
   min-height: 100vh;
 }
+
+#network path:hover{
+  fill: #e56600;
+}

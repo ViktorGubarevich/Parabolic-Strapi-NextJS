@@ -93,7 +93,7 @@ const Login = () => {
                 className="w-4 h-4 cursor-pointer text-blue-300 bg-gray-100 rounded border-gray-300 focus:ring-blue-300 dark:focus:ring-blue-400"
               />
               <label
-                for="default-checkbox"
+                htmlFor="default-checkbox"
                 className="ml-2 text-sm font-medium text-center text-[#17bcb8] dark:text-gray-300 cursor-pointer"
               >
                 Remember Me

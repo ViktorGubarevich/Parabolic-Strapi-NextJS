@@ -11,17 +11,17 @@ const Nav = () => {
   };
 
   return (
-    <nav className="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-gray-700 bg-white">
+    <nav className="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-gray-700 bg-white shadow-[0_4px_8px_0px_rgba(0,0,0,0.25)] fixed">
       <div>
         <Link href="/">
           <a>
             {/*eslint-disable-next-line @next/next/no-img-element */}
             <img
               className="m-3"
-              src="/parabolic-logo.png"
+              src="/parabolic-logo-nav.png"
               width={200}
               height={50}
-              alt="Strapi Logo"
+              alt="Parabolic Logo"
             />
           </a>
         </Link>
@@ -48,39 +48,49 @@ const Nav = () => {
         <ul className="pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0 space-x-2">
           <li>
             <Link href="/">
-              <a className="md:p-2 py-2 block hover:text-red-400">Home</a>
+              <a className="p-4 block hover:bg-[#ffb80b]">
+                WEEKLY UPDATES & ALERTS
+              </a>
             </Link>
           </li>
           <li>
             <Link href="/posts">
-              <a className="md:p-2 py-2 block hover:text-red-400">Posts</a>
+              <a className="p-4 block hover:bg-[#ffb80b]">MONTHLY ISSUES</a>
             </Link>
           </li>
           <li>
             <Link href={"/about"}>
-              <a className="md:p-2 py-2 block hover:text-red-400">About</a>
+              <a className="p-4 block hover:bg-[#ffb80b]">PORTFOLIO</a>
             </Link>
           </li>
           <li>
             <Link href={"/contact"}>
-              <a className="md:p-2 py-2 block hover:text-red-400">Contact</a>
+              <a className="p-4 block hover:bg-[#ffb80b]">SPECIAL REPORTS</a>
             </Link>
           </li>
           <li>
             <Link href={"/profile"}>
-              <a className="md:p-2 py-2 block hover:text-red-400">Profile</a>
+              <a className="p-4 block hover:bg-[#ffb80b]">MASTER CLASS</a>
             </Link>
           </li>
           <li>
-            <a
-              className="md:p-2 py-2 block hover:text-red-400"
-              onClick={logout}
-              style={{ cursor: "pointer" }}
-            >
-              Logout
-            </a>
+            <Link href={"/profile"}>
+              <a className="p-4 block hover:bg-[#ffb80b]">ABOUT</a>
+            </Link>
+          </li>
+          <li>
+            <Link href={"/profile"}>
+              <a className="p-4 block hover:bg-[#ffb80b]">FAQ</a>
+            </Link>
           </li>
         </ul>
+        <a
+          className="ml-2.5 py-1.5 px-5 block text-white font-semibold hover:text-[#212b38] bg-[#00ae42] rounded-full hover:bg-[#50ce50]"
+          onClick={logout}
+          style={{ cursor: "pointer" }}
+        >
+          LOGOUT
+        </a>
       </div>
     </nav>
   );
