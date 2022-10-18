@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "monthly_posts",
+  "info": {
+    "singularName": "monthly-post",
+    "pluralName": "monthly-posts",
+    "displayName": "monthly-post"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "published": {
+      "type": "date"
+    },
+    "edition": {
+      "type": "string"
+    },
+    "info": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "tab": {
+      "type": "string"
+    }
+  }
+}

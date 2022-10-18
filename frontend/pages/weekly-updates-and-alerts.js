@@ -1,30 +1,23 @@
 import Layout from "../components/Layout";
-import Login from "../components/Login";
 import Posts from "../components/Posts";
 import { fetcher } from "../lib/api";
 import { useFetchUser } from "../lib/authContext";
 
-const Home = ({ posts }) => {
+const PostsList = ({ posts }) => {
   const { user, loading } = useFetchUser();
 
   return (
-    <>
-      {user ? (
-        <Layout user={user}>
-          <Posts posts={posts} />
-        </Layout>
-      ) : (
-        <Login />
-      )}
-    </>
+    <Layout user={user}>
+      <Posts posts={posts} />
+    </Layout>
   );
 };
 
-export default Home;
+export default PostsList;
 
 export async function getStaticProps() {
   const postsResponse = await fetcher(
-    `${process.env.NEXT_PUBLIC_STRAPI_URL}/posts`
+    `${process.env.NEXT_PUBLIC_STRAPI_URL}/weakly-posts`
   );
 
   return {

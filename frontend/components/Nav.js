@@ -47,39 +47,39 @@ const Nav = () => {
       >
         <ul className="pt-4 text-sm text-gray-700 md:flex md:justify-between md:pt-0 space-x-2">
           <li>
-            <Link href="/">
+            <Link href="/weekly-updates-and-alerts">
               <a className="p-3 block hover:bg-[#ffb80b]">
                 WEEKLY UPDATES & ALERTS
               </a>
             </Link>
           </li>
           <li>
-            <Link href="/posts">
+            <Link href="/monthly-issue">
               <a className="p-3 block hover:bg-[#ffb80b]">MONTHLY ISSUES</a>
             </Link>
           </li>
           <li>
-            <Link href={"/about"}>
+            <Link href="/about">
               <a className="p-3 block hover:bg-[#ffb80b]">PORTFOLIO</a>
             </Link>
           </li>
           <li>
-            <Link href={"/contact"}>
+            <Link href="/contact">
               <a className="p-3 block hover:bg-[#ffb80b]">SPECIAL REPORTS</a>
             </Link>
           </li>
           <li>
-            <Link href={"/profile"}>
+            <Link href="/profile">
               <a className="p-3 block hover:bg-[#ffb80b]">MASTER CLASS</a>
             </Link>
           </li>
           <li>
-            <Link href={"/profile"}>
+            <Link href="/profile">
               <a className="p-3 block hover:bg-[#ffb80b]">ABOUT</a>
             </Link>
           </li>
           <li>
-            <Link href={"/profile"}>
+            <Link href="/profile">
               <a className="p-3 block hover:bg-[#ffb80b]">FAQ</a>
             </Link>
           </li>

@@ -17,7 +17,7 @@ export default PostsList;
 
 export async function getStaticProps() {
   const postsResponse = await fetcher(
-    `${process.env.NEXT_PUBLIC_STRAPI_URL}/posts`
+    `${process.env.NEXT_PUBLIC_STRAPI_URL}/monthly-posts`
   );
 
   return {
