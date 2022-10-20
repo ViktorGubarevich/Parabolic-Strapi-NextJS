@@ -12,7 +12,7 @@ const Questions = ({ questions }) => {
                   <p className="mb-4 text-base">
                     <strong>Q: </strong><em>{question.attributes.question}</em> 
                   </p>
-                  <p className="mb-8 text-base font-normal leading-5">
+                  <p id="margin" className="mb-8 text-base font-normal leading-5">
                     <ReactMarkdown>{question.attributes.answer}</ReactMarkdown>
                   </p>                  
                 </div>

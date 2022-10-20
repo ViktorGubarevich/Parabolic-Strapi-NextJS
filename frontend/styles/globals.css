@@ -13,6 +13,6 @@
   fill: #e56600;
 }
 
-#margin p {
+#margin p, ul {
   margin-bottom: 16px;
 }
