@@ -16,17 +16,10 @@
       "type": "string"
     },
     "about": {
-      "type": "text"
+      "type": "richtext"
     },
-    "background": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
+    "image": {
+      "type": "richtext"
     }
   }
 }

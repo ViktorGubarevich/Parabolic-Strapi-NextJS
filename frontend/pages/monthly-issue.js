@@ -3,7 +3,7 @@ import Posts from "../components/Posts";
 import { fetcher } from "../lib/api";
 import { useFetchUser } from "../lib/authContext";
 
-const PostsList = ({ posts }) => {
+const MonthlyPostsList = ({ posts }) => {
   const { user, loading } = useFetchUser();
 
   return (
@@ -13,7 +13,7 @@ const PostsList = ({ posts }) => {
   );
 };
 
-export default PostsList;
+export default MonthlyPostsList;
 
 export async function getStaticProps() {
   const postsResponse = await fetcher(

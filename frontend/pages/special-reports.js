@@ -3,7 +3,7 @@ import Posts from "../components/Posts";
 import { fetcher } from "../lib/api";
 import { useFetchUser } from "../lib/authContext";
 
-const WeeklyPostsList = ({ posts }) => {
+const SpecialPostsList = ({ posts }) => {
   const { user, loading } = useFetchUser();
 
   return (
@@ -13,11 +13,11 @@ const WeeklyPostsList = ({ posts }) => {
   );
 };
 
-export default WeeklyPostsList;
+export default SpecialPostsList;
 
 export async function getStaticProps() {
   const postsResponse = await fetcher(
-    `${process.env.NEXT_PUBLIC_STRAPI_URL}/weakly-posts`
+    `${process.env.NEXT_PUBLIC_STRAPI_URL}/special-posts`
   );
 
   return {

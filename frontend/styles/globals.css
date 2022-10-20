@@ -12,3 +12,7 @@
 #network path:hover{
   fill: #e56600;
 }
+
+#margin p {
+  margin-bottom: 16px;
+}

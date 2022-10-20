@@ -64,22 +64,22 @@ const Nav = () => {
             </Link>
           </li>
           <li>
-            <Link href="/contact">
+            <Link href="/special-reports">
               <a className="p-3 block hover:bg-[#ffb80b]">SPECIAL REPORTS</a>
             </Link>
           </li>
           <li>
-            <Link href="/profile">
+            <Link href="/options-unleased-the-parabolic-profits-masterclass">
               <a className="p-3 block hover:bg-[#ffb80b]">MASTER CLASS</a>
             </Link>
           </li>
           <li>
-            <Link href="/profile">
+            <Link href="/about">
               <a className="p-3 block hover:bg-[#ffb80b]">ABOUT</a>
             </Link>
           </li>
           <li>
-            <Link href="/profile">
+            <Link href="/faq">
               <a className="p-3 block hover:bg-[#ffb80b]">FAQ</a>
             </Link>
           </li>

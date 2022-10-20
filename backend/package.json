@@ -10,8 +10,10 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@strapi/plugin-graphql": "^4.4.5",
     "@strapi/plugin-i18n": "4.4.0",
     "@strapi/plugin-users-permissions": "4.4.0",
+    "@strapi/provider-upload-cloudinary": "^4.4.5",
     "@strapi/strapi": "4.4.0",
     "better-sqlite3": "7.4.6",
     "strapi-html-editor": "^1.0.2",

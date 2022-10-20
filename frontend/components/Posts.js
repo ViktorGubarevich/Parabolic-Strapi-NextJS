@@ -9,7 +9,7 @@ const Posts = ({ posts }) => {
           posts.data.map((post) => {
             return (
               <li key={post.id}>
-                <div className="flex flex-col bg-white rounded-lg p-5 mb-5 last:mb-0">
+                <div className="flex flex-col min-w-[823px] bg-white rounded-lg p-5 mb-5 last:mb-0">
                   <h1 className="mb-5 uppercase font-thin tracking-wider hover:underline hover:decoration-[#0056b3]">
                     <Link href={`post/` + post.attributes.slug}>
                       {post.attributes.title}
