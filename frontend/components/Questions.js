@@ -9,12 +9,13 @@ const Questions = ({ questions }) => {
             return (
               <li key={question.id}>
                 <div className="flex flex-col last:mb-0 font-serif">
-                  <p className="mb-4 text-base">
-                    <strong>Q: </strong><em>{question.attributes.question}</em> 
-                  </p>
-                  <p id="margin" className="mb-8 text-base font-normal leading-5">
+                  <div className="flex mb-4 text-base">
+                    <p className="pr-1 font-semibold">Q:</p>
+                    <p className="italic">{question.attributes.question}</p> 
+                  </div>
+                  <div id="margin" className="mb-8 text-base font-normal leading-5">
                     <ReactMarkdown>{question.attributes.answer}</ReactMarkdown>
-                  </p>                  
+                  </div>                  
                 </div>
               </li>
             );

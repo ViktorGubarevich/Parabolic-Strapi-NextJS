@@ -9,20 +9,20 @@ const Faq = ({ faqs, questions, secondPartQuestion, thirdPartQuestion }) => {
   return (
     <Layout user={user}>
       <div className="min-w-[1140px] px-4 flex flex-col font-light">
-        <h1 className="text-4xl font-thin mb-5 uppercase tracking-widest">
+        <div className="text-4xl font-thin mb-5 uppercase tracking-widest">
           {faqs[0].attributes.title}
-        </h1>
-        <h3 className="text-2xl mb-7 uppercase font-['Helvetica']">
+        </div>
+        <div className="text-2xl mb-7 uppercase font-['Helvetica']">
           {faqs[0].attributes.subtitle}
-        </h3>
+        </div>
         <Questions questions={questions} />
-        <h3 className="text-2xl mb-7 uppercase font-['Helvetica']">
+        <div className="text-2xl mb-7 uppercase font-['Helvetica']">
           {faqs[1].attributes.subtitle}
-        </h3>
+        </div>
         <Questions questions={secondPartQuestion} />
-        <h3 className="text-2xl mb-7 uppercase font-['Helvetica']">
+        <div className="text-2xl mb-7 uppercase font-['Helvetica']">
           {faqs[2].attributes.subtitle}
-        </h3>
+        </div>
         <Questions questions={thirdPartQuestion} />
       </div>
     </Layout>

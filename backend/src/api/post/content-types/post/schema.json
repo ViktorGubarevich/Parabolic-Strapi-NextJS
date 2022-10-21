@@ -21,20 +21,14 @@
     "edition": {
       "type": "string"
     },
-    "info": {
-      "type": "text"
-    },
     "slug": {
       "type": "string"
     },
-    "reviews": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::review.review",
-      "mappedBy": "Post"
-    },
     "tab": {
       "type": "string"
+    },
+    "content": {
+      "type": "richtext"
     }
   }
 }

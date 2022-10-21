@@ -45,7 +45,7 @@ const Nav = () => {
         className="hidden w-full md:flex md:items-center md:w-auto"
         id="menu"
       >
-        <ul className="pt-4 text-sm text-gray-700 md:flex md:justify-between md:pt-0 space-x-2">
+        <ul className="pt-4 text-sm text-gray-700 md:flex md:justify-between md:pt-0 space-x-2 mb-0">
           <li>
             <Link href="/weekly-updates-and-alerts">
               <a className="p-3 block hover:bg-[#ffb80b]">
@@ -59,7 +59,7 @@ const Nav = () => {
             </Link>
           </li>
           <li>
-            <Link href="/about">
+            <Link href="/portfolios">
               <a className="p-3 block hover:bg-[#ffb80b]">PORTFOLIO</a>
             </Link>
           </li>
