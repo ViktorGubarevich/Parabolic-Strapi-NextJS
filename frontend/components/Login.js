@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
+// import { EyeIcon, EyeOffIcon } from "@heroicons/react/solid";
+
 import { useRouter } from "next/router";
 import { fetcher } from "../lib/api";
 import { setToken } from "../lib/auth";
@@ -10,6 +12,7 @@ const Login = () => {
     identifier: "",
     password: "",
   });
+  // const [isPasswordHidden, setPasswordHidden] = useState(true);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -62,6 +65,7 @@ const Login = () => {
             <label className="text-sm mb-1 text-[#17bcb8]" htmlFor="username">
               Username or Email Address
             </label>
+            <input type="hidden"></input>
             <input
               className="border-2 rounded py-1.5 px-3"
               type="text"
@@ -75,19 +79,31 @@ const Login = () => {
             <label className="text-sm mb-1 text-[#17bcb8]" htmlFor="password">
               Password
             </label>
+            <input type="hidden"></input>
             <input
               className="border-2 rounded py-1.5 px-3"
+              // type={isPasswordHidden ? "password" : "text"}
               type="password"
               name="password"
               onChange={handleChange}
               value={data.password}
               required
             />
+            {/* <button
+              type="button"
+              className="absolute right-1 -translate-x-1 -translate-y-1"
+              onClick={() => setPasswordHidden(!isPasswordHidden)}
+            >
+              {isPasswordHidden ? (
+                <EyeIcon className="w-6 h-full text-secondary-content" />
+              ) : (
+                <EyeOffIcon className="w-6 h-full text-secondary-content" />
+              )}
+            </button> */}
           </div>
           <div className="flex justify-between md:w-full">
             <div>
               <input
-                id="default-checkbox"
                 type="checkbox"
                 value=""
                 className="w-4 h-4 cursor-pointer text-blue-300 bg-gray-100 rounded border-gray-300 focus:ring-blue-300 dark:focus:ring-blue-400"

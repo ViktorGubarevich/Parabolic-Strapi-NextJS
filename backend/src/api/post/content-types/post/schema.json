@@ -29,6 +29,12 @@
     },
     "content": {
       "type": "richtext"
+    },
+    "audio": {
+      "type": "string"
+    },
+    "pdf": {
+      "type": "string"
     }
   }
 }

@@ -8,9 +8,9 @@ const Masterclass = () => {
     <Layout user={user}>
       <div className="min-w-[1140px] px-4 flex flex-col font-light">
         <div className="flex flex-col">
-          <p className="text-4xl font-thin mb-5 uppercase tracking-widest">
+          <div className="text-4xl font-thin mb-5 uppercase tracking-widest">
             Options unleashed
-          </p>
+          </div>
           <iframe
             className="w-full h-[623px] outline-none"
             src="//fast.wistia.net/embed/iframe/72wly3lnl2?videoFoam=true"

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "weakly-post",
     "pluralName": "weakly-posts",
-    "displayName": "weakly-post"
+    "displayName": "weakly-post",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,7 +21,7 @@
     "edition": {
       "type": "string"
     },
-    "info": {
+    "content": {
       "type": "text"
     },
     "slug": {

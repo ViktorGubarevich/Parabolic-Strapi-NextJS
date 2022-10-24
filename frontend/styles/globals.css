@@ -49,3 +49,13 @@
 #margin hr {
   margin-top: 16px;
 }
+
+#link a {
+  color: #007bff;
+}
+
+#link a:hover {
+  color:#0056b3;
+  text-decoration: underline;
+  text-decoration-color: #0056b3;
+}

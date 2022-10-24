@@ -47,14 +47,14 @@ const Nav = () => {
       >
         <ul className="pt-4 text-sm text-gray-700 md:flex md:justify-between md:pt-0 space-x-2 mb-0">
           <li>
-            <Link href="/weekly-updates-and-alerts">
+            <Link href="/weakly-posts">
               <a className="p-3 block hover:bg-[#ffb80b]">
                 WEEKLY UPDATES & ALERTS
               </a>
             </Link>
           </li>
           <li>
-            <Link href="/monthly-issue">
+            <Link href="/monthly-posts">
               <a className="p-3 block hover:bg-[#ffb80b]">MONTHLY ISSUES</a>
             </Link>
           </li>
@@ -64,7 +64,7 @@ const Nav = () => {
             </Link>
           </li>
           <li>
-            <Link href="/special-reports">
+            <Link href="/special-posts">
               <a className="p-3 block hover:bg-[#ffb80b]">SPECIAL REPORTS</a>
             </Link>
           </li>
